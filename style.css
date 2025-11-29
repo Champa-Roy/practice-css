@@ -4,6 +4,8 @@
   --accent: #2563eb;
   --text: #111827;
   --muted: #6b7280;
+  --radius: 8px;
+  --transition: 220ms;
 }
 
 *{box-sizing:border-box}
@@ -57,8 +59,40 @@ blockquote cite{display:block;margin-top:.5rem;color:var(--muted);font-size:.875
 /* footer */
 footer{border-top:1px solid #eef2ff;padding-top:.75rem;color:var(--muted);font-size:.875rem;text-align:center;margin-top:1rem}
 
+/* practice section */
+.practice{margin-top:1rem;padding-top:1rem;border-top:1px dashed rgba(15,23,42,0.04)}
+.practice h3{margin:0 0 .5rem;font-size:1.125rem}
+.practice h4{margin:.75rem 0 .5rem;font-size:1rem;color:var(--muted)}
+
+/* lists */
+ul,ol{margin:0 0 1rem 1.25rem}
+li{margin:0.25rem 0}
+
+/* form basics */
+.form-row{display:grid;grid-template-columns:1fr;gap:.5rem 0;margin:0 0 1rem}
+.form-row label{font-weight:600;font-size:.9rem;color:var(--muted)}
+input[type="text"], textarea, select{width:100%;padding:.5rem;border:1px solid rgba(15,23,42,0.06);border-radius:6px;font-size:1rem}
+textarea{resize:vertical}
+input:focus, textarea:focus, select:focus{outline:3px solid rgba(37,99,235,0.08);outline-offset:2px}
+
+/* table basics */
+table{width:100%;border-collapse:collapse;margin:0 0 1rem;background:transparent}
+caption{caption-side:top;font-weight:700;margin-bottom:.5rem;color:var(--muted)}
+th,td{padding:.5rem .75rem;text-align:left;border-bottom:1px solid rgba(15,23,42,0.04)}
+th{background:rgba(37,99,235,0.03);font-weight:700}
+
+
 /* small responsive tweaks */
 @media (max-width:560px){
   body{padding:1rem}
   h1{font-size:1.4rem}
 }
+
+
+
+
+/* responsive nav tweak */
+.nav-list{flex-wrap:wrap}
+
+/* small button variant */
+.btn-secondary{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12);padding:.45rem .75rem;border-radius:calc(var(--radius) - 2px)}
