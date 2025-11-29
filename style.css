@@ -42,6 +42,21 @@ button{
 }
 button:hover{filter:brightness(.95)}
 
+/* navigation */
+nav{margin:0 0 1rem}
+.nav-list{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
+.nav-list a{color:var(--accent);text-decoration:none;font-weight:600}
+.nav-list a:hover{text-decoration:underline}
+
+/* article and blockquote */
+article{margin-bottom:1rem}
+blockquote{margin:1rem 0;padding:.75rem 1rem;border-left:4px solid rgba(37,99,235,0.12);background:#fbfdff;border-radius:8px;color:#374151}
+blockquote p{margin:0;font-style:italic}
+blockquote cite{display:block;margin-top:.5rem;color:var(--muted);font-size:.875rem}
+
+/* footer */
+footer{border-top:1px solid #eef2ff;padding-top:.75rem;color:var(--muted);font-size:.875rem;text-align:center;margin-top:1rem}
+
 /* small responsive tweaks */
 @media (max-width:560px){
   body{padding:1rem}
